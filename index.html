@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HACKED</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      font-family: 'Courier New', monospace;
+      color: rgb(233, 226, 226);
+      overflow: hidden;
+    }
+
+    /* خلفية Matrix */
+    .matrix-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("https://cdn.discordapp.com/attachments/1230450313790488577/1401493948719042580/IMG_3763.jpg?ex=68907a73&is=688f28f3&hm=0674e7f3289edd66f6632f424530c7d5d5725f7b2a2256d11738ded0ed300cd5&") center center / cover no-repeat;
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+    .center {
+      text-align: center;
+      color: #eeede8ff;
+      text-shadow: 0 0 10px rgb(82, 82, 82);
+      margin-top: 30px;
+    }
+
+    .img-box {
+      width: 200px;
+      height: 200px;
+      border: 2px solid rgb(73, 73, 73);
+      margin: 0 auto 20px;
+      background: black;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .big-text {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: rgb(73, 73, 73);
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #5e5d5d;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: transparent;
+      color: rgb(105, 103, 103);
+      border: 1px solid rgb(129, 129, 129);
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: default;
+      font-size: 14px;
+      text-shadow: 0 0 5px rgb(99, 98, 98);
+    }
+
+    .countdown {
+      font-size: 48px;
+      margin-top: 30px;
+      color: rgb(82, 81, 81);
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="matrix-bg"></div>
+
+  <div class="center">
+    <div class="img-box">
+      <!-- يمكنك وضع صورة هاكر هنا -->
+      <img src="https://cdn.discordapp.com/attachments/1230450313790488577/1401491954528682024/66ee417d5e8d6a744558f5dc162bfcd9.jpg?ex=68907898&is=688f2718&hm=2c32558169fae30fc4afb209fd05908827c74421ff16206e731c7a65c3cc9f36&">
+    </div>
+
+    <div class="big-text">HACKED BY #ابو حامد</div>
+    <div class="big-text">بعيوني ابوحامد</div>
+
+    <div class="message">
+      ...<br>
+       <b>ابو حامد</b><br>
+      by #3mk
+    </div>
+
+    <div class="message" style="color: rgb(175, 175, 175); margin-top: 20px;">
+      kemo بعيوني .
+    </div>
+
+    <div class="button-container">
+      <div class="btn">بعيوني نجعور</div>
+      <div class="btn"> big smoke بعيوني</div>
+      <div class="btn"> بعيونيه حونشي العدام</div>
+      <div class="btn"> D7بعيوني</div>
+      <div class="btn">ZPLAY بعيوني</div>
+    </div>
+
+    <div class="countdown" id="countdown">30</div>
+  </div>
+
+  <!-- صوت الاختراق -->
+  <audio id="hackSound" autoplay>
+  <source src="https://cdn.discordapp.com/attachments/1400463310306148412/1401509439697063996/Not_Like_Us_cut_31sec.mp3?ex=689088e1&is=688f3761&hm=cf2edf7da65722924a990299506c0bb38f432c215fd2ab12981d5136e0aa49de&">
+  Your browser does not support the audio element.
+</audio>
+
+  <script>
+    // صوت عالي
+    const audio = document.getElementById("hackSound");
+    audio.volume = 1.0;
+
+    // عد تنازلي
+    let counter = 30;
+    const countdown = document.getElementById("countdown");
+
+    const timer = setInterval(() => {
+      counter--;
+      countdown.textContent = counter;
+      if (counter <= 0) {
+        clearInterval(timer);
+        document.body.innerHTML = ""; // يخفي كل شيء بعد 30 ثانية
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
